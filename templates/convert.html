@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>USD to SGD Converter</title>
+</head>
+<body>
+<h1>USD to SGD Converter</h1>
+<form action="/convert" method="POST">
+<label for="usd_amount">USD Amount:</label>
+<input type="number" id="usd_amount" name="usd_amount">
+<input type="submit" value="Convert">
+</form>
+<br>
+{% if sgd_amount %}
+<p>SGD Amount: {{ sgd_amount }}</p>
+{% endif %}
+</body>
+</html>
+
